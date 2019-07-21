@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+      <!-- Leaflet -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='opensource/leaflet/leaflet.css') }}" />
+
+
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+      <title>Large and Medium Parent Providers</title>   
+  </head>
+  <body style="background-color: lightblue">
+
+    <!-- Page Elements -->
+    <div id="myTitle"><h1 class="display-4">Large and Medium Corporate Parent Providers</h1></div>
+
+    <div class="noMobile"><div id="gneLogo"><img src="{{ url_for('static', filename='images/genentech-1.svg') }}" alt="GNE Logo" height="75" width="250"></div></div>
+
+    <div class="mobile"><div id="gneSmallLogo"><img src="{{ url_for('static', filename='images/genentech_small_logo.png') }}" alt="GNE Logo" height="150" width="100"></div></div>
+    
+    <div id="myMap"></div>
+    
+    <!-- Leaflet -->
+    <script src="{{ url_for('static', filename='opensource/leaflet/leaflet.js') }}"></script>
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- API key -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/config.js') }}"></script>
+
+    <!-- JS -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/accounting.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/providers.js') }}"></script>
+    
+  </body>
+
+</html>

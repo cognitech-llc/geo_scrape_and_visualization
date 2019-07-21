@@ -1,0 +1,61 @@
+#myMap {
+	border: 1px solid black;	
+	height: 750px;
+}
+
+#myTitle {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+	padding-bottom: 25px;
+}
+
+#gneLogo {
+	position: absolute;
+	left: 0px;
+	top: 1px;
+	z-index: -1;
+	width: 100%;
+}
+
+#gneSmallLogo {
+	display:none;
+}
+
+@media screen and (max-width: 1500px) {
+	.noMobile {
+		display: none;
+	}
+
+	#gneSmallLogo {
+		display: inline;
+		position: absolute;
+		left: 0px;
+		top: -20px;
+		z-index: -1;
+		width: 100%;
+	}
+
+	.mobile {
+		display: inline;
+		position: absolute;
+		left: 0px;
+		top: -20px;
+		z-index: -1;
+		width: 100%;
+	}
+
+	#myMap {
+		border: 1px solid black;	
+		height: 450px;
+	}
+
+	#myTitle {
+		text-align: center;
+		max-width: 100%;
+		height: auto;
+		width: auto\9; /* ie8 */
+		padding-bottom: 10px;
+	}
+}

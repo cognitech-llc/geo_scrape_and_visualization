@@ -9,9 +9,10 @@
 	height: auto;
 	width: auto\9; /* ie8 */
 	padding-bottom: 25px;
+	color: #75D97B;
 }
 
-#gneLogo {
+#cognitechLogo {
 	position: absolute;
 	left: 0px;
 	top: 1px;
@@ -19,7 +20,7 @@
 	width: 100%;
 }
 
-#gneSmallLogo {
+#cognitechSmallLogo {
 	display:none;
 }
 
@@ -28,11 +29,15 @@
 		display: none;
 	}
 
-	#gneSmallLogo {
+	#cognitechLogo {
+		display:none;
+	}
+
+	#cognitechSmallLogo {
 		display: inline;
 		position: absolute;
-		left: 0px;
-		top: -20px;
+		left: 30px;
+		top: 25px;
 		z-index: -1;
 		width: 100%;
 	}
@@ -48,7 +53,7 @@
 
 	#myMap {
 		border: 1px solid black;	
-		height: 450px;
+		height: 525px;
 	}
 
 	#myTitle {
@@ -57,5 +62,6 @@
 		height: auto;
 		width: auto\9; /* ie8 */
 		padding-bottom: 10px;
+		color: #75D97B;
 	}
 }

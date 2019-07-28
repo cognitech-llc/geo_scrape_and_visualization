@@ -6,8 +6,6 @@ import numpy as np
 
 from flask import Flask, jsonify, render_template, url_for, send_from_directory
 
-print("Current Working Directory " , os.getcwd())
-
 app = Flask(__name__)
 
 # ### Load Data

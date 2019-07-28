@@ -6,10 +6,12 @@ import numpy as np
 
 from flask import Flask, jsonify, render_template, url_for, send_from_directory
 
+print("Current Working Directory " , os.getcwd())
+
 app = Flask(__name__)
 
 # ### Load Data
-starbucks_df = pd.read_csv('/app/data/starbucks_coordinates.csv', encoding="utf-8-sig")
+starbucks_df = pd.read_csv('/data/starbucks_coordinates.csv', encoding="utf-8-sig")
 
 
 @app.route("/")

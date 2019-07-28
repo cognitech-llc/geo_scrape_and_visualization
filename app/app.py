@@ -8,6 +8,8 @@ from flask import Flask, jsonify, render_template, url_for, send_from_directory
 
 app = Flask(__name__)
 
+print(os.getcwd())
+
 # ### Load Data
 starbucks_df = pd.read_csv('/data/starbucks_coordinates.csv', encoding="utf-8-sig")
 

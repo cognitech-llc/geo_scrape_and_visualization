@@ -11,7 +11,7 @@ app = Flask(__name__)
 print(os.getcwd())
 
 # ### Load Data
-starbucks_df = pd.read_csv('/data/starbucks_coordinates.csv', encoding="utf-8-sig")
+starbucks_df = pd.read_csv('~app/data/starbucks_coordinates.csv', encoding="utf-8-sig")
 
 
 @app.route("/")
